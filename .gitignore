@@ -4,3 +4,4 @@ __pycache__
 mlflow
 mlruns
 lightning_logs
+.model.pt

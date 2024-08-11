@@ -55,7 +55,7 @@ test_loader = DataLoader(
     num_workers=0,
 )
 
-checkpoint_path = os.path.join(os.path.dirname(__file__), ".model.py")
+checkpoint_path = os.path.join(os.path.dirname(__file__), ".model.pt")
 
 def train():
     with mlflow.start_run(run_id=run.info.run_id):
@@ -67,7 +67,7 @@ def train():
 
         mlflow.log_param("batch_size", batch_size)
 
-        epochs = 3
+        epochs = 5
         mlflow.log_param("epochs", epochs)
 
         def loss_fn(
