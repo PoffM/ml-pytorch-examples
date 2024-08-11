@@ -1,0 +1,6 @@
+.mypy_cache
+data
+__pycache__
+mlflow
+mlruns
+lightning_logs
